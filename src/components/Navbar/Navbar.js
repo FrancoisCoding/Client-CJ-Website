@@ -7,8 +7,14 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   let history = useHistory();
   const [isOpen, setIsOpen] = useState(false);
+  console.log(isOpen);
+  if (isOpen) {
+    document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+  } else {
+    document.getElementsByTagName("body")[0].style.overflowY = "visible";
+  }
   return (
-    <div className="navbar">
+    <div className="navbar" style={{ overflow: "hidden !important" }}>
       <div className="menu">
         <Menu
           customBurgerIcon={<img src="https://i.imgur.com/M1SyJcd.png" />}
