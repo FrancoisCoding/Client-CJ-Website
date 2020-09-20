@@ -16,7 +16,7 @@
 .bm-burger-button button {
   width: 4rem !important;
   height: 4rem !important;
-  margin-top: 0.5rem !important;
+  margin-top: 3rem !important;
   margin-left: 1rem !important;
 }
 
@@ -47,10 +47,6 @@
 
 .menu-item-home {
   margin-top: 8rem;
-}
-
-.logo-white {
-  width: 5rem;
 }
 
 .logo-container {

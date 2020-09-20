@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./About.css";
 
@@ -207,28 +207,7 @@ const About = () => {
         </p>
       </section>
 
-      <footer className="footer">
-        <img
-          src="https://i.imgur.com/2JrXqol.png"
-          alt="Quadruple Logo"
-          className="logo-black"
-        />
-        <div className="links">
-          <Link to="/about" className="about link">
-            ABOUT US
-          </Link>
-          <Link to="/contact" className="contact link">
-            CONTACT US
-          </Link>
-          <Link to="/faqs" className="faqs link">
-            FAQS
-          </Link>
-        </div>
-        <div className="call">
-          <div className="call-btn">CALL ME NOW</div>
-          <h1>(877) 799-7575</h1>
-        </div>
-      </footer>
+      <Footer />
 
       <div className="copyright">
         <p>Copyright © 2020 Quadruple J. Capital - All Rights Reserved</p>
