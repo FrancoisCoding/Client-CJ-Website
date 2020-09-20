@@ -24,3 +24,53 @@
   font-size: 1.5rem;
   text-decoration: underline;
 }
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-input {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 1rem 15rem 1rem 2rem;
+  width: 45%;
+  margin: 4rem 0;
+}
+
+.contact-input-long {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 1rem 20rem 1rem 2rem;
+  width: 100%;
+}
+
+.contact-form-top {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.contact-form-middle {
+  margin: 0 auto;
+  width: 95%;
+}
+.contact-form-bottom {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contact-form-submit {
+  background-color: #eac061;
+  color: #120c0c;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  text-align: center;
+  margin: 0 auto;
+  width: 10%;
+  cursor: pointer;
+}
+
+.contact-form-submit:hover {
+  transition: 0.3s ease-in-out;
+  opacity: 0.7;
+}

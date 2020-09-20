@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./Contact.css";
 
 const Contact = () => {
+  const [formState, setFormState] = useState({
+    first_name: "",
+    last_name: "",
+    entity: "",
+    phone: "",
+    email: "",
+  });
+
+  const handleChange = (e) => {
+    setFormState({ ...formState, [e.target.name]: e.target.value });
+  };
+
+  console.log(formState);
   return (
     <div>
       <Navbar />
@@ -18,7 +31,53 @@ const Contact = () => {
           <p className="contact-link">info@quadruplejcapital.com</p>
         </div>
         <form action="" className="contact-form">
-          <div className="contact-form-submit">SUBMIT</div>
+          <div className="contact-form-top">
+            <input
+              type="text"
+              name="first_name"
+              value={formState.first_name}
+              placeholder="FIRST NAME*"
+              className="contact-input open-sans"
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="last_name"
+              value={formState.last_name}
+              placeholder="LAST NAME*"
+              className="contact-input open-sans"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="contact-form-middle">
+            <input
+              type="text"
+              name="entity"
+              value={formState.entity}
+              placeholder="NAME OF ENTITY (REQUIRED OF YOU HAVE ONE)"
+              className="contact-input-long open-sans"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="contact-form-bottom">
+            <input
+              type="text"
+              name="phone"
+              value={formState.phone}
+              placeholder="PRIMARY PHONE NUMBER*"
+              className="contact-input open-sans"
+              onChange={handleChange}
+            />
+            <input
+              type="email"
+              name="email"
+              value={formState.email}
+              placeholder="EMAIL ADDRESS*"
+              className="contact-input open-sans"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="contact-form-submit open-sans">SUBMIT</div>
         </form>
       </div>
       <Footer />
