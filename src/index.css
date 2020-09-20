@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.times {
+  font-family: "Times New Roman", sans-serif;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -18,4 +28,59 @@ code {
   border: solid black 0px;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 5rem;
+  background-color: #120c0c;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.logo-black {
+  width: 15rem;
+}
+
+.link {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.link:hover {
+  transition: 0.3s ease-in-out;
+  opacity: 0.7;
+}
+
+.about {
+  margin-right: 2rem;
+  padding-right: 2rem;
+  border-right: 1px solid black;
+}
+
+.contact {
+  margin-right: 2rem;
+  padding-right: 2rem;
+  border-right: 1px solid black;
+}
+
+.call-btn {
+  background-color: #eac061;
+  color: #120c0c;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  text-align: center;
 }

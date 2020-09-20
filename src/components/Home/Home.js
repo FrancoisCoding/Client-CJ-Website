@@ -7,7 +7,6 @@ import { slide as Menu } from "react-burger-menu";
 const Home = () => {
   let history = useHistory();
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
   return (
     <div>
       <div className="navbar">
@@ -19,7 +18,7 @@ const Home = () => {
             onClose={() => setIsOpen(false)}
             isOpen={isOpen}
           >
-            <Link to="/home" id="home" className="menu-item-home menu-item">
+            <Link to="/" id="home" className="menu-item-home menu-item">
               HOME
             </Link>
             <Link to="/about" id="about" className="menu-item">
@@ -49,7 +48,7 @@ const Home = () => {
           className="home-property"
         />
         <div className="top-section-info">
-          <div className="top-section-info-text">
+          <div className="top-section-info-text times">
             <p>LOOKING FOR CAPITAL TO PURCHASE</p>
             <p>YOUR NEXT INVESTMENT PROPERTY?</p>
           </div>
@@ -60,9 +59,9 @@ const Home = () => {
       </section>
 
       <main className="main-section">
-        <h1 className="main-header">WE ARE HERE TO SERVICE YOU</h1>
+        <h1 className="main-header times">WE ARE HERE TO SERVICE YOU</h1>
         <div className="icon-section">
-          <div className="icon-info">
+          <div className="icon-info open-sans">
             <img
               src="https://i.imgur.com/50lUVDp.png"
               alt="Services"
@@ -70,7 +69,7 @@ const Home = () => {
             />
             <p>Interested in fix and flips, rentals or wholesales</p>
           </div>
-          <div className="icon-info">
+          <div className="icon-info open-sans">
             <img
               src="https://i.imgur.com/8sSp7sK.png"
               alt="Services"
@@ -81,7 +80,7 @@ const Home = () => {
               non-owner occupied and under contract?
             </p>
           </div>
-          <div className="icon-info">
+          <div className="icon-info open-sans">
             <img
               src="https://i.imgur.com/eYDWlfH.png"
               alt="Services"
