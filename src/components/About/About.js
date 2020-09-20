@@ -115,7 +115,7 @@ const About = () => {
               losing the selling of a property, use the following step process:
             </p>
             <div className="qualified-text-list">
-              <ul>
+              <ul className="about-list">
                 <li>Prospect and Review Potential Properties</li>
                 <li>Write and Negotiate Offers</li>
                 <li>Get Offer Accepted by Seller</li>

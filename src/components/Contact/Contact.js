@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./Contact.css";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -14,6 +15,32 @@ const Contact = () => {
 
   const handleChange = (e) => {
     setFormState({ ...formState, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "gmail",
+        "quadruplejcapital",
+        "#contactform",
+        "user_EOL2yavJMcxMWOciZYb0X"
+      )
+      .then(
+        (result) => {
+          setFormState({
+            first_name: "",
+            last_name: "",
+            entity: "",
+            phone: "",
+            email: "",
+          });
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   console.log(formState);
@@ -30,7 +57,8 @@ const Contact = () => {
           />
           <p className="contact-link">info@quadruplejcapital.com</p>
         </div>
-        <form action="" className="contact-form">
+        {/* <form className="contact-form" onSubmit={sendEmail} id="contactform"> */}
+        <form className="contact-form">
           <div className="contact-form-top">
             <input
               type="text"

@@ -114,11 +114,11 @@
   padding: 3rem;
 }
 
-ul {
+.about-list {
   list-style: none; /* Remove default bullets */
 }
 
-ul li::before {
+.about-list li::before {
   content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: #eac061; /* Change the color */
   font-weight: bold; /* If you want it to be bold */

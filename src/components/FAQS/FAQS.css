@@ -1,0 +1,30 @@
+.faqs-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqs-top-header {
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+.faqs-image {
+  width: 8rem;
+  padding: 2rem 0;
+}
+
+.faqs-tabs {
+  margin-top: 3rem;
+}
+
+.tab-additional-info {
+  text-align: end;
+  font-size: 1.5rem;
+  margin-bottom: 15rem;
+}
+
+.tab-link {
+  text-decoration: underline;
+  color: #0066cc;
+}
