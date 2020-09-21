@@ -212,10 +212,6 @@ const About = () => {
       </section>
 
       <Footer />
-
-      <div className="copyright">
-        <p>Copyright © 2020 Quadruple J. Capital - All Rights Reserved</p>
-      </div>
     </div>
   );
 };
