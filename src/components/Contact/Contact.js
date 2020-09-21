@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./Contact.css";
-import emailjs from "emailjs-com";
+import axios from "axios";
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -19,31 +19,9 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "gmail",
-        "quadruplejcapital",
-        "#contactform",
-        "user_EOL2yavJMcxMWOciZYb0X"
-      )
-      .then(
-        (result) => {
-          setFormState({
-            first_name: "",
-            last_name: "",
-            entity: "",
-            phone: "",
-            email: "",
-          });
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    axios.post("https://thawing-temple-42838.herokuapp.com/", formState);
   };
 
-  console.log(formState);
   return (
     <div>
       <Navbar />
@@ -57,8 +35,7 @@ const Contact = () => {
           />
           <p className="contact-link">info@quadruplejcapital.com</p>
         </div>
-        {/* <form className="contact-form" onSubmit={sendEmail} id="contactform"> */}
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={sendEmail}>
           <div className="contact-form-top">
             <input
               type="text"
@@ -105,7 +82,9 @@ const Contact = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="contact-form-submit open-sans">SUBMIT</div>
+          <div className="contact-form-submit open-sans" onClick={sendEmail}>
+            SUBMIT
+          </div>
         </form>
       </div>
       <Footer />
