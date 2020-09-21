@@ -114,6 +114,10 @@
   padding: 3rem;
 }
 
+.qualified-hidden {
+  display: none;
+}
+
 .about-list {
   list-style: none; /* Remove default bullets */
 }
@@ -174,4 +178,175 @@
 
 .why-card-text {
   padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-about {
+    flex-direction: column;
+  }
+
+  .bio-right {
+    order: 1;
+  }
+
+  .bio-right img {
+    width: 100%;
+    padding: 0;
+    float: none;
+  }
+
+  .bio-left {
+    order: 2;
+  }
+
+  .about-title-container img {
+    display: none;
+  }
+
+  .about-title-text {
+    padding: 0;
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+
+  .cj-title-text {
+    padding: 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .mission {
+    flex-direction: column;
+  }
+
+  .mission-header {
+    font-size: 2rem;
+    color: #eac061;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .mission-text {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .company-about-header {
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .company-about {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .company-about-text {
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .company-about-text-left {
+    padding-right: 0rem;
+  }
+
+  .qualified-title {
+    order: 1;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .qualified-header-top {
+    font-size: 2rem;
+  }
+
+  .qualified-header {
+    padding: 0;
+    font-size: 2rem;
+  }
+
+  .qualified-left {
+    order: 2;
+  }
+
+  .qualified-left img {
+    width: 100%;
+  }
+
+  .qualified {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .qualified-right {
+    order: 3;
+  }
+
+  .qualified-hidden {
+    display: block;
+  }
+
+  .qualified-hidden-two {
+    display: none;
+  }
+
+  .qualified-text {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .qualified-text-list {
+    padding: 2rem;
+    line-height: 2rem;
+  }
+
+  .why {
+    padding: 1rem;
+  }
+
+  .why-header {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .why-text {
+    font-size: 1rem;
+  }
+
+  .why-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  .why-card {
+    background: #eac061;
+    color: #120c0c;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .why-card-header {
+    padding: 1rem 0.25rem;
+    font-size: 2rem;
+  }
+
+  .why-card-text {
+    padding: 1rem;
+  }
 }

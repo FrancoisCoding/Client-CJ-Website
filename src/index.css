@@ -30,27 +30,3 @@ code {
   text-decoration: none;
   box-sizing: border-box;
 }
-
-.copyright {
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 2rem 0;
-}
-
-.logo-black {
-  width: 15rem;
-}
-
-.call-btn {
-  background-color: #eac061;
-  color: #120c0c;
-  padding: 1rem 3rem;
-  border-radius: 30px;
-  text-align: center;
-}

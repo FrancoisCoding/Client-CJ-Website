@@ -56,3 +56,24 @@
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
+
+@media only screen and (max-width: 600px) {
+  .faqs-top-header {
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .faqs-image {
+    width: 6rem;
+    padding: 1rem 0;
+  }
+
+  .faqs-list {
+    flex-direction: row;
+    font-size: 1rem !important;
+  }
+  .faqs-list li {
+    padding: 1rem;
+  }
+}

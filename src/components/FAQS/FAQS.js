@@ -151,6 +151,7 @@ const FAQS = () => {
             </TabPanel>
           </Tabs>
         </div>
+
         <p className="tab-additional-info">
           For more FAQs from Arnold Lee visit{" "}
           <a

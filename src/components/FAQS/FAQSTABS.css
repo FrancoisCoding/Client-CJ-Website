@@ -78,3 +78,55 @@
 .tab-panel-text {
   font-size: 1.5rem;
 }
+
+.faqs-tabs-hidden {
+  display: none;
+}
+
+.tab-mobile {
+  background: white !important;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .react-tabs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  .react-tabs__tab-list {
+    height: 100%;
+    align-items: center;
+  }
+
+  .react-tabs__tab-list li {
+    list-style-type: none !important;
+  }
+
+  .react-tabs__tab {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 100%;
+  }
+
+  .faqs-tabs-hidden {
+    display: block;
+  }
+
+  .faqs-tabs-hidden-two {
+    display: none;
+  }
+
+  .react-tabs__tab-panel--selected {
+    width: 100%;
+    height: 100%;
+    border: 2px solid lightgreen;
+    margin-top: 1rem;
+  }
+
+  .tab-additional-info {
+    display: none;
+  }
+}

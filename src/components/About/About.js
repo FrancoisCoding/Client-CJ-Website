@@ -39,7 +39,7 @@ const About = () => {
           </div>
         </div>
         <div className="bio-right">
-          <img src="https://i.imgur.com/zQzsJ6y.png" alt="CJ" />
+          <img src="https://i.imgur.com/hYVS9c1.png" alt="CJ" />
         </div>
       </section>
 
@@ -96,14 +96,18 @@ const About = () => {
       </section>
 
       <section className="qualified">
+        <div className=" qualified-title qualified-header times qualified-hidden">
+          <h1 className="qualified-header-top">STEPS TO GETTING</h1>
+          <h1 className="qualified-header">QUALIFIED</h1>
+        </div>
         <div className="qualified-left">
           <img src="https://i.imgur.com/hM8BVOd.png" alt="Agreement" />
         </div>
         <div className="qualified-right">
-          <h1 className="qualified-header qualified-header-top times">
-            STEPS TO GETTING
-          </h1>
-          <h1 className="qualified-header times">QUALIFIED</h1>
+          <div className=" qualified-title qualified-header times qualified-hidden-two">
+            <h1 className="qualified-header-top">STEPS TO GETTING</h1>
+            <h1 className="qualified-header">QUALIFIED</h1>
+          </div>
           <div className="qualified-text qualified-text-top  open-sans">
             <p>
               The number one rule is: it’s much easier to shop for cash when you
