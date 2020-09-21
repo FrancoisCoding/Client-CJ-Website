@@ -45,8 +45,8 @@ const Home = () => {
               className="services-images"
             />
             <p>
-              Do you have a property (residential or commercial) that is
-              non-owner occupied and under contract?
+              Do you have a property that is non-owner occupied and under
+              contract?
             </p>
           </div>
           <div className="icon-info open-sans">

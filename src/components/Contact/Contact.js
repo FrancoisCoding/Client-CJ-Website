@@ -59,7 +59,7 @@ const Contact = () => {
               type="text"
               name="entity"
               value={formState.entity}
-              placeholder="NAME OF ENTITY (REQUIRED OF YOU HAVE ONE)"
+              placeholder="NAME OF ENTITY (REQUIRED IF YOU HAVE ONE)"
               className="contact-input-long open-sans"
               onChange={handleChange}
             />
