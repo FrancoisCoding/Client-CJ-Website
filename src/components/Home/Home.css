@@ -37,22 +37,9 @@
   background: #eac061;
 }
 
-.menu-item {
-  color: #eac061;
-  font-size: 3rem;
-  text-align: center;
-  border-bottom: 1px solid #281712;
-  margin-bottom: 3rem;
-  padding-bottom: 3rem;
-}
-
 .bm-item:focus {
   color: white;
   outline: none;
-}
-
-.menu-item-home {
-  margin-top: 8rem;
 }
 
 .logo-container {
